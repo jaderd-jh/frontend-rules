@@ -1,10 +1,12 @@
 {
   "name": "@jhqn/vue",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "jade前端自定义vue代码规范",
-  "main": "index.js",
+  "main": "index.ts",
+  "files": ["dist"],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc --build tsconfig.json",
+    "prepublishOnly": "rimraf dist && npm run build"
   },
   "author": "",
   "license": "MIT",
@@ -15,6 +17,26 @@
     "@vue/eslint-config-prettier": "^6.0.0",
     "@vue/eslint-config-typescript": "^7.0.0",
     "eslint-plugin-prettier-vue": "^3.1.0",
-    "eslint-plugin-vue": "^7.19.1"
+    "eslint-plugin-vue": "^7.19.1",
+    "eslint": "^8.0.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-import-resolver-typescript": "^2.5.0",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-unicorn": "^37.0.0",
+    "husky": "^7.0.2",
+    "prettier": "^2.4.1",
+    "stylelint": "^13.13.1",
+    "stylelint-config-prettier": "^9.0.2",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-recommended": "^5.0.0",
+    "stylelint-config-standard": "^22.0.0",
+    "stylelint-declaration-block-no-ignored-properties": "^2.4.0",
+    "stylelint-no-unsupported-browser-features": "^5.0.2",
+    "stylelint-order": "^4.1.0",
+    "stylelint-scss": "^3.21.0",
+    "typescript": "^4.4.3"
   }
 }

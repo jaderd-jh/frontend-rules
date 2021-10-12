@@ -1,6 +1,5 @@
-const config = require('../../stylelint.base')
 module.exports = {
-  ...config,
+  ...require('../../stylelint.base'),
   rules: {
     'no-descending-specificity': null,
     'function-calc-no-invalid': null,

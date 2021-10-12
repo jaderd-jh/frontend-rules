@@ -1,6 +1,5 @@
-const config = require('../../stylelint.base')
 module.exports = {
-  ...config,
+  ...require('../../stylelint.base'),
   rules: {
     'at-rule-no-unknown': null,
     'scss/at-rule-no-unknown': true,
