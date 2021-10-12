@@ -1,9 +1,11 @@
 {
   "name": "@jhqn/react",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "jade前端自定义react代码规范",
-  "main": "index.ts",
-  "files": ["dist"],
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsc --build tsconfig.json",
     "prepublishOnly": "rimraf dist && npm run build"
