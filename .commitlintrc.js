@@ -19,6 +19,7 @@ module.exports = {
         'test', // 测试
         'wip', // 开发中
         'ui', // 样式
+        'release', // 发版
       ],
     ],
   },
