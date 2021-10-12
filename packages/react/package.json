@@ -1,6 +1,6 @@
 {
   "name": "@jhqn/react",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "jade前端自定义react代码规范",
   "main": "index.js",
   "scripts": {
