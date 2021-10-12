@@ -1,0 +1,17 @@
+{
+  "name": "@jade/vue",
+  "version": "0.0.1",
+  "description": "jade前端自定义vue代码规范",
+  "main": "eslint.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "@vue/eslint-config-typescript": "^7.0.0",
+    "eslint-plugin-prettier-vue": "^3.1.0",
+    "eslint-plugin-vue": "^7.19.1"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "@jade/react",
+  "version": "0.0.1",
+  "description": "jade前端自定义react代码规范",
+  "main": "eslint.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint-plugin-react": "^7.26.1",
+    "eslint-plugin-react-hooks": "^4.2.0"
+  }
+}
