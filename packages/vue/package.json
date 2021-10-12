@@ -1,11 +1,8 @@
 {
   "name": "@jhqn/vue",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "jade前端自定义vue代码规范",
   "main": "index.js",
-  "files": [
-    "index.js"
-  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
