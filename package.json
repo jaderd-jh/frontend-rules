@@ -1,6 +1,6 @@
 {
   "name": "jade-frontend-rules",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "jade前端自定义代码规范",
   "private": true,
   "scripts": {
@@ -28,6 +28,7 @@
     "eslint": "^8.0.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^8.3.0",
+    "eslint-define-config": "^1.1.1",
     "eslint-import-resolver-typescript": "^2.5.0",
     "eslint-plugin-import": "^2.24.2",
     "eslint-plugin-jsx-a11y": "^6.4.1",

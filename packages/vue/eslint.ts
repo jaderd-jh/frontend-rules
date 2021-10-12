@@ -1,4 +1,5 @@
-module.exports = {
+const { defineConfig } = require('eslint-define-config')
+module.exports = defineConfig({
   root: true,
   env: {
     browser: true,
@@ -160,4 +161,4 @@ module.exports = {
       },
     },
   ],
-}
+})
