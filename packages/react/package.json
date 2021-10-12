@@ -1,5 +1,5 @@
 {
-  "name": "@jade/react",
+  "name": "@jhqn/react",
   "version": "0.0.1",
   "description": "jade前端自定义react代码规范",
   "main": "index.js",
