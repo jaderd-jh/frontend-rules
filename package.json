@@ -1,6 +1,6 @@
 {
   "name": "jade-frontend-rules",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "jade前端自定义代码规范",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
