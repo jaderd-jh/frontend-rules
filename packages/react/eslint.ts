@@ -1,5 +1,4 @@
-const { defineConfig } = require('eslint-define-config')
-module.exports = defineConfig({
+module.exports = {
   env: {
     browser: true,
     node: true,
@@ -242,4 +241,4 @@ module.exports = defineConfig({
     'import/external-module-folders': ['node_modules', 'node_modules/@types'],
     polyfills: ['fetch', 'Promise', 'URL', 'object-assign'],
   },
-})
+}
