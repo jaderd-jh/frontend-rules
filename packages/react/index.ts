@@ -1,5 +1,8 @@
+const eslint = require('./eslint')
+const prettier = require('./prettier')
+const stylelint = require('./stylelint')
 module.exports = {
-  eslint: require('./eslint'),
-  prettier: require('./prettier'),
-  stylelint: require('./stylelint')
+  eslint,
+  prettier,
+  stylelint
 }
