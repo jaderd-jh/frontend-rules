@@ -1,6 +1,6 @@
 {
   "name": "@jhqn/react",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "jade前端自定义react代码规范",
   "main": "dist/index.js",
   "files": [
@@ -10,8 +10,23 @@
     "build": "tsc --build tsconfig.json",
     "prepublishOnly": "rimraf dist && npm run build"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jade-gjz/frontend-rules.git"
+  },
+  "keywords": [
+    "jade",
+    "vue",
+    "eslint",
+    "prettier",
+    "stylelint"
+  ],
+  "author": "jade-gjz",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jade-gjz/frontend-rules/issues"
+  },
+  "homepage": "https://github.com/jade-gjz/frontend-rules#readme",
   "publishConfig": {
     "access": "public"
   },
@@ -38,6 +53,7 @@
     "stylelint-declaration-block-no-ignored-properties": "^2.4.0",
     "stylelint-no-unsupported-browser-features": "^5.0.2",
     "stylelint-order": "^4.1.0",
-    "stylelint-scss": "^3.21.0"
+    "stylelint-scss": "^3.21.0",
+    "typescript": "^4.4.4"
   }
 }
