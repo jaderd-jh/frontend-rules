@@ -12,6 +12,8 @@ module.exports = {
     },
     ecmaVersion: 12,
     sourceType: 'module',
+    requireConfigFile: false,
+    project: './tsconfig.json',
   },
   plugins: ['eslint-comments', 'react', 'unicorn', 'react-hooks'],
   rules: {
