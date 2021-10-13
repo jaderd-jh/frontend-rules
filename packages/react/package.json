@@ -1,6 +1,6 @@
 {
   "name": "@jhqn/react",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "jade前端自定义react代码规范",
   "main": "dist/index.js",
   "files": [
@@ -38,9 +38,5 @@
     "stylelint-no-unsupported-browser-features": "^5.0.2",
     "stylelint-order": "^4.1.0",
     "stylelint-scss": "^3.21.0"
-  },
-  "devDependencies": {
-    "husky": "^7.0.2",
-    "typescript": "^4.4.3"
   }
 }
