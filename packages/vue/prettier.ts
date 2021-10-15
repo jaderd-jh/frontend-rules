@@ -1,9 +1,9 @@
 module.exports = {
+  arrowParens: 'avoid',
   endOfLine: 'lf',
+  semi: false,
   singleQuote: true,
   trailingComma: 'es5',
   useTabs: false,
-  semi: false,
-  arrowParens: 'avoid',
-  printWidth: 100,
+  vueIndentScriptAndStyle: true,
 }
