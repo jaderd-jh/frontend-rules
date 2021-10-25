@@ -1,7 +1,6 @@
 module.exports = {
   extends: [
-    'stylelint-config-recommended',
-    'stylelint-config-standard',
+    'stylelint-config-standard-scss',
     'stylelint-config-rational-order',
     'stylelint-config-prettier',
     'stylelint-no-unsupported-browser-features',
