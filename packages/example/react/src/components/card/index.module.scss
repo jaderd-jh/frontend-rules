@@ -1,4 +1,23 @@
-.card{
+.card {
   background: rebeccapurple;
+  color: #61dafb;
   position: relative;
+  display: grid;
+  row-gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 10px;
+
+  &_title {
+    color: beige;
+    display: flex;
+    vertical-align: top;
+  }
+}
+
+:global(.foo) {
+  color: #61dafb;
+}
+
+div {
+  transition: margin 350ms ease-in;
 }

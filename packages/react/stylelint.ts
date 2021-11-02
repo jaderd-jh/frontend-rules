@@ -1,28 +1,33 @@
 module.exports = {
   extends: [
+    'stylelint-config-recommended',
     'stylelint-config-standard-scss',
-    'stylelint-config-rational-order',
+    'stylelint-config-recess-order',
     'stylelint-config-prettier',
-    'stylelint-no-unsupported-browser-features',
   ],
   plugins: [
     'stylelint-order',
     'stylelint-scss',
     'stylelint-declaration-block-no-ignored-properties',
+    'stylelint-high-performance-animation',
+    'stylelint-no-unsupported-browser-features',
   ],
+  customSyntax: 'postcss-scss',
   rules: {
-    'no-descending-specificity': null,
-    'function-calc-no-invalid': null,
-    'function-url-quotes': 'always',
-    'font-family-no-missing-generic-family-keyword': null,
     'plugin/declaration-block-no-ignored-properties': true,
-    'unit-no-unknown': [true, { ignoreUnits: ['rpx'] }],
-    "selector-pseudo-class-no-unknown": [
+    'plugin/no-low-performance-animation-properties': true,
+    'plugin/no-unsupported-browser-features': [
       true,
       {
-        "ignorePseudoClasses": ["global"]
-      }
-    ]
+        severity: 'warning',
+      },
+    ],
+    'selector-pseudo-class-no-unknown': [
+      true,
+      {
+        ignorePseudoClasses: ['global'],
+      },
+    ],
   },
   ignoreFiles: ['**/*.js', '**/*.jsx', '**/*.tsx', '**/*.ts'],
 }
