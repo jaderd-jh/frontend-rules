@@ -28,6 +28,8 @@ module.exports = {
         ignorePseudoClasses: ['global'],
       },
     ],
+    // kebab-case(组件库常用 or snake_case(方便使用css modules)
+    'selector-class-pattern': '^([a-z][a-z0-9]*)((_|-)[a-z0-9]+)*$',
   },
   ignoreFiles: ['**/*.js', '**/*.jsx', '**/*.tsx', '**/*.ts'],
 }
