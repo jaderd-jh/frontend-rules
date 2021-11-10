@@ -5,11 +5,28 @@
     "module": "esnext",
     "moduleResolution": "node",
     "strict": true,
+    "types": [
+      "vite/client",
+      "node"
+    ],
+    "skipLibCheck": true,
     "jsx": "preserve",
     "sourceMap": true,
+    "allowJs": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
-    "lib": ["esnext", "dom"]
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable"
+    ]
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"]
+  "include": [
+    ".eslintrc.js",
+    "vite.config.ts",
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue"
+  ]
 }

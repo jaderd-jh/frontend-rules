@@ -20,6 +20,7 @@ module.exports = {
     'eslint:recommended',
     'plugin:vue/vue3-recommended',
     'plugin:@typescript-eslint/recommended',
+    'plugin:compat/recommended',
     '@vue/typescript/recommended',
     '@vue/prettier/@typescript-eslint',
     'prettier',
@@ -92,7 +93,14 @@ module.exports = {
     parser: '@typescript-eslint/parser',
     sourceType: 'module',
   },
-  plugins: ['import', 'unicorn', 'vue', '@typescript-eslint', 'prettier'],
+  plugins: [
+    'import',
+    'unicorn',
+    'vue',
+    'ecmascript-compat',
+    '@typescript-eslint',
+    'prettier',
+  ],
   // https://eslint.vuejs.org/rules/
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
@@ -150,6 +158,7 @@ module.exports = {
       },
     ],
     'no-bitwise': ['error', { allow: ['~', '>>', '<<', '&', '|'] }],
+    'ecmascript-compat/compat': 'warn',
   },
   // https://github.com/typescript-eslint/typescript-eslint/issues/2528#issuecomment-689369395
   overrides: [

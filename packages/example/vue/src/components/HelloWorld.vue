@@ -4,36 +4,49 @@
   defineProps<{ msg: string }>()
 
   const count = ref(0)
+  const obj = ref<{
+    a: number
+    b: number
+  }>()
+  const flag = ref(localStorage.getItem('flag') ?? 'nothing')
+  const list = ref([432, 424, 234234, 2, 42, 5, 46, 34, 6, 45])
+  for (const listElement of list.value) {
+    console.log(listElement)
+  }
+  const a = () =>
+    new Promise(resolve => {
+      setTimeout(() => {
+        resolve(1)
+      }, 1000)
+    })
+  const b = () =>
+    new Promise(resolve => {
+      setTimeout(() => {
+        resolve(2)
+      }, 1000)
+    })
+  const c = () =>
+    Promise.allSettled([a(), b()]).then(res => {
+      console.log(res)
+    })
+  c()
+
+  const num = BigInt(123)
+  console.log(num)
+  console.log(obj.value?.a)
+  console.log(flag.value)
+  fetch('https://google.com')
 </script>
 
 <template>
   <h1>{{ msg }}</h1>
-
   <p>
-    Recommended IDE setup:
-    <a href="https://code.visualstudio.com/" target="_blank">VSCode</a>
-    +
-    <a href="https://github.com/johnsoncodehk/volar" target="_blank">Volar</a>
+    <button type="button" @click="count++">count is: {{ count }}</button>
   </p>
-
-  <p>See <code>README.md</code> for more information.</p>
-
-  <p>
-    <a href="https://vitejs.dev/guide/features.html" target="_blank">
-      Vite Docs
-    </a>
-    |
-    <a href="https://v3.vuejs.org/" target="_blank">Vue 3 Docs</a>
-  </p>
-
-  <button type="button" @click="count++">count is: {{ count }}</button>
-  <p>
-    Edit
-    <code>components/HelloWorld.vue</code> to test hot module replacement.
-  </p>
+  <van-button round type="primary">vant测试</van-button>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
   a {
     color: #42b983;
   }
@@ -48,5 +61,18 @@
     padding: 2px 4px;
     border-radius: 4px;
     color: #304455;
+  }
+
+  .van-button--primary {
+    background: #000;
+  }
+
+  :global(.foo),
+  ::v-deep(.foo),
+  ::v-slotted(.foo),
+  ::v-global(.foo),
+  :deep(.foo),
+  :slotted(.foo) {
+    color: red;
   }
 </style>

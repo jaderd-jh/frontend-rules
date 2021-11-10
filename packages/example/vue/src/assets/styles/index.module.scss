@@ -1,0 +1,32 @@
+:global(.ant-tabs-top > .ant-tabs-nav::before) {
+  border-bottom: 1px solid transparent;
+}
+
+:global(.ant-tabs-tab) {
+  padding: 12px 0 0 0;
+  color: #679bbf;
+  font-weight: 700;
+  font-size: 18px;
+
+  &:hover {
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 0 0 20px #1592fe;
+  }
+
+  &:focus {
+    color: rgba(255, 255, 255, 0.8);
+  }
+}
+
+:global(.ant-tabs-top > .ant-tabs-nav) {
+  margin: 0;
+}
+
+:global(.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn) {
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: #1592fe 0 0 20px;
+}
+
+:global(.ant-tabs-ink-bar) {
+  background: transparent;
+}

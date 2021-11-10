@@ -1,23 +1,39 @@
 module.exports = {
   extends: [
+    'stylelint-config-recommended',
+    'stylelint-config-html',
+    'stylelint-config-recommended-vue',
     'stylelint-config-standard-scss',
-    'stylelint-config-rational-order',
+    'stylelint-config-recess-order',
     'stylelint-config-prettier',
-    'stylelint-no-unsupported-browser-features',
   ],
   plugins: [
-    'stylelint-order',
     'stylelint-scss',
     'stylelint-declaration-block-no-ignored-properties',
+    'stylelint-high-performance-animation',
+    'stylelint-no-unsupported-browser-features',
   ],
   rules: {
     'at-rule-no-unknown': null,
     'scss/at-rule-no-unknown': true,
-    'function-calc-no-invalid': true,
+    'plugin/declaration-block-no-ignored-properties': true,
+    'plugin/no-low-performance-animation-properties': true,
+    'plugin/no-unsupported-browser-features': [
+      true,
+      {
+        severity: 'warning',
+      },
+    ],
     'selector-pseudo-element-no-unknown': [
       true,
       {
         ignorePseudoElements: ['v-deep'],
+      },
+    ],
+    'no-descending-specificity': [
+      true,
+      {
+        severity: 'warning',
       },
     ],
     'selector-pseudo-class-no-unknown': [
@@ -26,5 +42,7 @@ module.exports = {
         ignorePseudoClasses: ['global', 'deep'],
       },
     ],
+    // .foo .foo--bar .foo__bar
+    'selector-class-pattern': '^([a-z][a-z0-9]*)((_|-|--)[a-z0-9]+)*$',
   },
 }

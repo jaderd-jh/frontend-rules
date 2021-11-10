@@ -1,0 +1,11 @@
+> 1%
+not dead
+supports es6-module
+last 2 Firefox versions
+last 2 Safari versions
+not ie <= 11
+not op_mini all
+chrome >= 63
+and_chr >= 63
+safari >= 12
+ios_saf >= 12
