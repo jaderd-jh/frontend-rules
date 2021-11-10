@@ -4,7 +4,7 @@ module.exports = {
     node: true,
     es2021: true,
   },
-  extends: ['eslint-config-airbnb-base', 'prettier', 'plugin:@typescript-eslint/recommended'],
+  extends: ['eslint-config-airbnb-base', 'prettier', 'plugin:@typescript-eslint/recommended', 'plugin:compat/recommended',],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
@@ -15,7 +15,7 @@ module.exports = {
     requireConfigFile: false,
     project: './tsconfig.json',
   },
-  plugins: ['eslint-comments', 'react', 'unicorn', 'react-hooks'],
+  plugins: ['eslint-comments', 'react', 'unicorn', 'react-hooks', 'ecmascript-compat'],
   rules: {
     'no-use-before-define': 'off',
     'react/display-name': 0,
@@ -229,6 +229,7 @@ module.exports = {
       'error',
       { vars: 'all', args: 'after-used', ignoreRestSiblings: true },
     ],
+    'ecmascript-compat/compat': 'warn',
   },
   settings: {
     'import/resolver': {

@@ -6,7 +6,6 @@ module.exports = {
     'stylelint-config-prettier',
   ],
   plugins: [
-    'stylelint-order',
     'stylelint-scss',
     'stylelint-declaration-block-no-ignored-properties',
     'stylelint-high-performance-animation',
@@ -16,6 +15,12 @@ module.exports = {
   rules: {
     'plugin/declaration-block-no-ignored-properties': true,
     'plugin/no-low-performance-animation-properties': true,
+    'no-descending-specificity': [
+      true,
+      {
+        severity: 'warning',
+      },
+    ],
     'plugin/no-unsupported-browser-features': [
       true,
       {
