@@ -1,10 +1,10 @@
 module.exports = {
   extends: [
-    'stylelint-config-recommended',
-    'stylelint-config-html',
-    'stylelint-config-recommended-vue',
+    'stylelint-config-standard',
     'stylelint-config-standard-scss',
     'stylelint-config-recess-order',
+    'stylelint-config-html/html',
+    'stylelint-config-html/vue',
     'stylelint-config-prettier',
   ],
   plugins: [
@@ -27,7 +27,7 @@ module.exports = {
     'selector-pseudo-element-no-unknown': [
       true,
       {
-        ignorePseudoElements: ['v-deep'],
+        ignorePseudoElements: ['v-deep', 'v-global', 'v-slotted'],
       },
     ],
     'no-descending-specificity': [
