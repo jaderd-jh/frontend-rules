@@ -43,6 +43,6 @@ module.exports = {
       },
     ],
     // .foo .foo--bar .foo__bar
-    'selector-class-pattern': '^([a-z][a-z0-9]*)((_|-|--)[a-z0-9]+)*$',
+    'selector-class-pattern': '^([a-z][a-z0-9]*)((_|__|-|--)[a-z0-9]+)*$',
   },
 }
