@@ -42,7 +42,16 @@ module.exports = {
         ignorePseudoClasses: ['global', 'deep'],
       },
     ],
+    'value-no-vendor-prefix': [
+      true,
+      {
+        /**
+         * -webkit-box: 常用于多行文本省略
+         */
+        ignoreValues: ['-webkit-box'],
+      },
+    ],
     // .foo .foo--bar .foo__bar
-    'selector-class-pattern': '^([a-z][a-z0-9]*)((_|-|--)[a-z0-9]+)*$',
+    'selector-class-pattern': '^([a-z][a-z0-9]*)((_|__|-|--)[a-z0-9]+)*$',
   },
 }

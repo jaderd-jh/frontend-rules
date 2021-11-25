@@ -48,7 +48,7 @@ module.exports = {
         /**
          * -webkit-box: 常用于多行文本省略
          */
-        ignore: ['-webkit-box'],
+        ignoreValues: ['-webkit-box'],
       },
     ],
     // .foo .foo--bar .foo__bar
