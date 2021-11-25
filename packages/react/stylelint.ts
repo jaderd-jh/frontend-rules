@@ -33,6 +33,15 @@ module.exports = {
         ignorePseudoClasses: ['global'],
       },
     ],
+    'value-no-vendor-prefix': [
+      true,
+      {
+        /**
+         * -webkit-box: 常用于多行文本省略
+         */
+        ignore: ['-webkit-box'],
+      },
+    ],
     // kebab-case(组件库常用 or snake_case(方便使用css modules)
     'selector-class-pattern': '^([a-z][a-z0-9]*)((_|__|-|--)[a-z0-9]+)*$',
   },
