@@ -56,6 +56,10 @@
     font-weight: bold;
   }
 
+  .foo {
+    display: -webkit-box;
+  }
+
   code {
     border-radius: 4px;
     background-color: #eee;
