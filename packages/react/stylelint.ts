@@ -39,7 +39,7 @@ module.exports = {
         /**
          * -webkit-box: 常用于多行文本省略
          */
-        ignoreValues: ['-webkit-box'],
+        ignoreValues: ['box'],
       },
     ],
     // kebab-case(组件库常用 or snake_case(方便使用css modules)
