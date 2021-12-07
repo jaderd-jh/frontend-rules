@@ -14,7 +14,10 @@ module.exports = {
   customSyntax: 'postcss-scss',
   rules: {
     'plugin/declaration-block-no-ignored-properties': true,
-    'plugin/no-low-performance-animation-properties': true,
+    'plugin/no-low-performance-animation-properties': [
+      true,
+      { ignoreProperties: ['color', 'background-color', 'background-image', 'background'] },
+    ],
     'no-descending-specificity': [
       true,
       {
