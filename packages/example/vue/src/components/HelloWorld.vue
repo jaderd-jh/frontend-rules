@@ -68,6 +68,11 @@
     position: relative;
   }
 
+  .test {
+    background: #000;
+    transition: background-color 1s ease-in-out;
+  }
+
   .van-button--primary {
     background: #000;
   }

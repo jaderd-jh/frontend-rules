@@ -17,7 +17,10 @@ module.exports = {
     'at-rule-no-unknown': null,
     'scss/at-rule-no-unknown': true,
     'plugin/declaration-block-no-ignored-properties': true,
-    'plugin/no-low-performance-animation-properties': true,
+    'plugin/no-low-performance-animation-properties': [
+      true,
+      { ignoreProperties: ['color', 'background-color', 'background'] },
+    ],
     'plugin/no-unsupported-browser-features': [
       true,
       {
