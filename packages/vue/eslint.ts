@@ -22,7 +22,6 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:compat/recommended',
     '@vue/typescript/recommended',
-    '@vue/prettier/@typescript-eslint',
     'prettier',
   ],
   settings: {
