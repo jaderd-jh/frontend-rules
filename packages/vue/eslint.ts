@@ -102,6 +102,10 @@ module.exports = {
   ],
   // https://eslint.vuejs.org/rules/
   rules: {
+    '@typescript-eslint/consistent-type-imports': [
+      'error',
+      { prefer: 'type-imports' },
+    ],
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'import/first': 0,
