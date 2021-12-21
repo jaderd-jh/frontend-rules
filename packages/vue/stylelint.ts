@@ -19,7 +19,7 @@ module.exports = {
     'plugin/declaration-block-no-ignored-properties': true,
     'plugin/no-low-performance-animation-properties': [
       true,
-      { ignoreProperties: ['color', 'background-color', 'background-image', 'background'] },
+      { ignoreProperties: ['color', 'background-color', 'background-image', 'background', 'box-shadow'] },
     ],
     'plugin/no-unsupported-browser-features': [
       true,
