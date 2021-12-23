@@ -1,6 +1,6 @@
 {
   "name": "@jhqn/vue",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "description": "jade前端自定义vue代码规范",
   "main": "dist/index.js",
   "files": [

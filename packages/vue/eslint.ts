@@ -3,17 +3,11 @@ module.exports = {
   env: {
     browser: true,
     node: true,
-  },
-  /**
-   * https://eslint.vuejs.org/user-guide/#faq
-   * or use like below
-   * import { defineEmits, defineExpose, defineProps, withDefaults } from 'vue'
-   */
-  globals: {
-    defineProps: 'readonly',
-    defineEmits: 'readonly',
-    defineExpose: 'readonly',
-    withDefaults: 'readonly',
+    /**
+     * https://eslint.vuejs.org/user-guide/#faq
+     * https://github.com/vuejs/eslint-plugin-vue/commit/44ff0e02cd0fd08b8cd7dee0127dbb5590446323#diff-538534b7c3f8223e82fa7d350af47f9d66c9ec7355dc567a22b54e5829e09703
+     */
+    'vue/setup-compiler-macros': true
   },
   extends: [
     'eslint-config-airbnb-base',
