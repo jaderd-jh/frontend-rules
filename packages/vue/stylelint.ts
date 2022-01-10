@@ -56,5 +56,7 @@ module.exports = {
     ],
     // .foo .foo--bar .foo__bar
     'selector-class-pattern': '^([a-z][a-z0-9]*)((_|__|-|--)[a-z0-9]+)*$',
+    'scss/at-import-partial-extension': 'always',
+    'scss/at-import-partial-extension-whitelist': ['scss'],
   },
 }
