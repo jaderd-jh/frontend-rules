@@ -48,10 +48,13 @@ module.exports = {
     'value-no-vendor-prefix': [
       true,
       {
-        /**
-         * -webkit-box: 常用于多行文本省略
-         */
-        ignoreValues: ['box'],
+        severity: 'warning',
+      },
+    ],
+    'property-no-vendor-prefix': [
+      true,
+      {
+        severity: 'warning',
       },
     ],
     // .foo .foo--bar .foo__bar
