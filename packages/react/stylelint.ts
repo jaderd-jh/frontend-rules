@@ -39,10 +39,13 @@ module.exports = {
     'value-no-vendor-prefix': [
       true,
       {
-        /**
-         * -webkit-box: 常用于多行文本省略
-         */
-        ignoreValues: ['box'],
+        severity: 'warning',
+      },
+    ],
+    'property-no-vendor-prefix': [
+      true,
+      {
+        severity: 'warning',
       },
     ],
     // kebab-case(组件库常用 or snake_case(方便使用css modules)
