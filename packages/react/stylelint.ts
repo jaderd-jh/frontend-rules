@@ -36,8 +36,8 @@ module.exports = {
         ignorePseudoClasses: ['global'],
       },
     ],
-    'value-no-vendor-prefix': false,
-    'property-no-vendor-prefix': false,
+    'value-no-vendor-prefix': null,
+    'property-no-vendor-prefix': null,
     // kebab-case(组件库常用 or snake_case(方便使用css modules)
     'selector-class-pattern': '^([a-z][a-z0-9]*)((_|__|-|--)[a-z0-9]+)*$',
   },
