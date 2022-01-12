@@ -45,8 +45,8 @@ module.exports = {
         ignorePseudoClasses: ['global', 'deep'],
       },
     ],
-    'value-no-vendor-prefix': false,
-    'property-no-vendor-prefix': false,
+    'value-no-vendor-prefix': null,
+    'property-no-vendor-prefix': null,
     // .foo .foo--bar .foo__bar
     'selector-class-pattern': '^([a-z][a-z0-9]*)((_|__|-|--)[a-z0-9]+)*$',
     'scss/at-import-partial-extension': 'always',
