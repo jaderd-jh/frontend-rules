@@ -1,6 +1,6 @@
 {
   "name": "@jhqn/vue",
-  "version": "0.1.18",
+  "version": "0.1.19",
   "description": "jade前端自定义vue代码规范",
   "main": "dist/index.js",
   "files": [
@@ -54,6 +54,7 @@
     "eslint-plugin-vue": "^8.4.1",
     "postcss-html": "^1.3.0",
     "postcss-scss": "^4.0.3",
+    "prettier-plugin-jsdoc": "^0.3.30",
     "stylelint-config-html": "^1.0.0",
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-recess-order": "^3.0.0",

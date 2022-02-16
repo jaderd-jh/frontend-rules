@@ -1,4 +1,5 @@
 module.exports = {
+  plugins: ['prettier-plugin-jsdoc'],
   arrowParens: 'avoid',
   endOfLine: 'lf',
   semi: false,
