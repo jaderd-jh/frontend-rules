@@ -6,7 +6,8 @@
   "scripts": {
     "build": "pnpm run build --filter @jhqn/*",
     "prepublishOnly": "pnpm run prepublishOnly --filter @jhqn/*",
-    "update": "pnpm up -i"
+    "update": "pnpm up -i",
+    "release": "pnpm publish -r"
   },
   "repository": {
     "type": "git",

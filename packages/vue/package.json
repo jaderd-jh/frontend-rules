@@ -9,8 +9,7 @@
   "scripts": {
     "build": "tsc --build tsconfig.json",
     "prepublishOnly": "rimraf dist && npm run build",
-    "update": "pnpm up -i",
-    "release": "pnpm publish -r"
+    "update": "pnpm up -i"
   },
   "repository": {
     "type": "git",
