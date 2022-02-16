@@ -1,6 +1,6 @@
 {
   "name": "@jhqn/react",
-  "version": "0.1.15",
+  "version": "0.1.16",
   "description": "jade前端自定义react代码规范",
   "main": "dist/index.js",
   "files": [
@@ -52,6 +52,7 @@
     "eslint-plugin-react-hooks": "^4.3.0",
     "eslint-plugin-unicorn": "^40.1.0",
     "postcss-scss": "^4.0.3",
+    "prettier-plugin-jsdoc": "^0.3.30",
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-recess-order": "^3.0.0",
     "stylelint-config-recommended": "^6.0.0",
