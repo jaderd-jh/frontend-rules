@@ -1,6 +1,6 @@
 {
   "name": "@jhqn/vue",
-  "version": "0.1.19",
+  "version": "0.1.20",
   "description": "jade前端自定义vue代码规范",
   "main": "dist/index.js",
   "files": [
@@ -34,7 +34,8 @@
   "peerDependencies": {
     "eslint": "^8.2.0",
     "prettier": "^2.4.0",
-    "stylelint": "^14.0.0"
+    "stylelint": "^14.0.0",
+    "postcss": "^8.3.0"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.12.0",
@@ -44,13 +45,13 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-import-resolver-typescript": "^2.5.0",
     "eslint-plugin-compat": "^4.0.2",
-    "eslint-plugin-ecmascript-compat": "^1.1.1",
+    "eslint-plugin-ecmascript-compat": "^2.0.0",
     "eslint-plugin-eslint-comments": "^3.2.0",
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-prettier-vue": "^3.1.0",
-    "eslint-plugin-unicorn": "^40.1.0",
+    "eslint-plugin-unicorn": "^41.0.0",
     "eslint-plugin-vue": "^8.4.1",
     "postcss-html": "^1.3.0",
     "postcss-scss": "^4.0.3",
@@ -59,7 +60,7 @@
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-recess-order": "^3.0.0",
     "stylelint-config-recommended-vue": "^1.3.0",
-    "stylelint-config-standard": "^24.0.0",
+    "stylelint-config-standard": "^25.0.0",
     "stylelint-config-standard-scss": "^3.0.0",
     "stylelint-declaration-block-no-ignored-properties": "^2.5.0",
     "stylelint-high-performance-animation": "^1.6.0",
