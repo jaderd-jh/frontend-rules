@@ -27,7 +27,7 @@
   "bugs": {
     "url": "https://github.com/jaderd-jh/frontend-rules/issues"
   },
-  "homepage": "https://github.com/jaderd-jh/frontend-rules#readme",
+  "homepage": "https://github.com/jaderd-jh/frontend-rules/tree/main/packages/react",
   "publishConfig": {
     "access": "public"
   },
