@@ -4,7 +4,7 @@ module.exports = {
     node: true,
     es2021: true,
   },
-  extends: ['eslint-config-airbnb-base', 'prettier', 'plugin:@typescript-eslint/recommended', 'plugin:compat/recommended',],
+  extends: ['eslint-config-airbnb-base', 'prettier', 'plugin:@typescript-eslint/recommended', 'plugin:compat/recommended', 'plugin:mobx/recommended'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
