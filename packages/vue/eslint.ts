@@ -104,7 +104,7 @@ module.exports = {
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'import/no-duplicates': 2,
     'import/first': 0,
-    'import/order': 0,
+    'import/order': 2,
     'import/no-unresolved': 0,
     'import/no-extraneous-dependencies': 0,
     'import/extensions': 0,
