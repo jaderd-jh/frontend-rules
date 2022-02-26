@@ -102,7 +102,7 @@ module.exports = {
     ],
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    'import/no-duplicates': 0,
+    'import/no-duplicates': 2,
     'import/first': 0,
     'import/order': 0,
     'import/no-unresolved': 0,
