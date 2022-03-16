@@ -46,10 +46,9 @@ jobs:
         run: pnpm i --frozen-lockfile
 
       - name: Gen npmrc
-        run: echo "//registry.npmjs.com/:_authToken=${{ secrets.NPM_TOKEN }}" >> ./.npmrc
-      - name: Build dist
-        run: pnpm run build
-      - name: Release
-        run: pnpm run release
+        run: echo "//registry.npmjs.com/:_authToken=${{ secrets.NPM_PUBLISH_TOKEN }}" >> ./.npmrc
+      - name: Build & Publish
+        run: sh ./scripts/publish.sh
         env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+          NODE_AUTH_TOKEN: ${{secrets.NPM_PUBLISH_TOKEN}}
+          REGISTRY: https://registry.npmjs.com/
