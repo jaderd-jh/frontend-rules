@@ -7,7 +7,7 @@
     "build": "pnpm run build --filter @jhqn/*",
     "prepublishOnly": "pnpm run prepublishOnly --filter @jhqn/*",
     "update": "pnpm up -i",
-    "release": "pnpm publish -r"
+    "release": "pnpm publish -r --no-git-checks"
   },
   "repository": {
     "type": "git",
