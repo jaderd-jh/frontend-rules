@@ -124,10 +124,13 @@ module.exports = {
     'vue/no-html': 0,
     'vue/component-name-in-template-casing': [
       'error',
-      'kebab-case',
+      'PascalCase',
       {
-        registeredComponentsOnly: true,
-        ignores: [],
+        registeredComponentsOnly: false,
+        /**
+         * 允许使用 kebab-case 命名方式 的组件库 vant | element-plus
+         */
+        ignores: ["/^van-/", "/^el-/"],
       },
     ],
     'vue/attributes-order': ['error', { alphabetical: true }],
