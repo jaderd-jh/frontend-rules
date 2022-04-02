@@ -4,6 +4,7 @@
   "description": "jade前端自定义代码规范",
   "private": true,
   "scripts": {
+    "dev": "pnpm run dev --filter @jhqn/*",
     "build": "pnpm run build --filter @jhqn/*",
     "prepublishOnly": "pnpm run prepublishOnly --filter @jhqn/*",
     "update": "pnpm up -i -r",
