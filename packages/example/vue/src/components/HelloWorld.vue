@@ -9,7 +9,7 @@
     b: number
   }>()
   const flag = ref(localStorage.getItem('flag') ?? 'nothing')
-  const list = ref([432, 424, 234234, 2, 42, 5, 46, 34, 6, 45])
+  const list = ref([432, 424, 234234, 2, 42, 6, 46, 34, 6, 45])
   for (const listElement of list.value) {
     console.log(listElement)
   }
