@@ -33,6 +33,8 @@ module.exports = {
       'error',
       { prefer: 'type-imports' },
     ],
+    // 允许短路表达式
+    '@typescript-eslint/no-unused-expressions': ['error', { allowShortCircuit: true }],
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'import/prefer-default-export': 1,
