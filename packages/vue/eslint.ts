@@ -34,8 +34,8 @@ module.exports = {
       { prefer: 'type-imports' },
     ],
     // 允许短路表达式
-    '@typescript-eslint/no-unused-expressions': ['error', { allowShortCircuit: true }],
     'no-unused-expressions': ['error', { allowShortCircuit: true }],
+    '@typescript-eslint/no-unused-expressions': ['error', { allowShortCircuit: true }],
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'import/prefer-default-export': 1,
@@ -97,6 +97,8 @@ module.exports = {
     ],
     'no-bitwise': ['error', { allow: ['~', '>>', '<<', '&', '|'] }],
     'ecmascript-compat/compat': 'warn',
+    'no-shadow': 'off',
+    '@typescript-eslint/no-shadow': 'error',
   },
   // https://github.com/typescript-eslint/typescript-eslint/issues/2528#issuecomment-689369395
   overrides: [
