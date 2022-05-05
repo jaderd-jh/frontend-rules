@@ -35,7 +35,7 @@ jobs:
         env:
           cache-name: cache-pnpm-store
         with:
-          path: ~/.pnpm-store
+          path: ~/.local/share/pnpm/store
           key: ${{ runner.os }}-publish-${{ env.cache-name }}-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: |
             ${{ runner.os }}-publish-${{ env.cache-name }}-

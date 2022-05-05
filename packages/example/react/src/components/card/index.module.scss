@@ -1,15 +1,15 @@
 .card {
-  background: rebeccapurple;
-  color: #61dafb;
   position: relative;
   display: grid;
-  row-gap: 10px;
   grid-template-columns: repeat(2, 1fr);
   grid-row-gap: 10px;
+  row-gap: 10px;
+  color: #61dafb;
+  background: rebeccapurple;
 
   &_title {
-    color: beige;
     display: flex;
+    color: beige;
     vertical-align: top;
   }
 }
