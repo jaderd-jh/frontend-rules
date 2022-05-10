@@ -1,9 +1,21 @@
-import Card from "./components/card"
+import Card from './components/card'
+import Foo from './components/foo'
 
 function App() {
-  return <div>
-    <Card />
-  </div>
+  return (
+    <div>
+      <Card />
+      <Foo
+        bar={'asd'}
+        data={[]}
+        foo={{ bar: '3f' }}
+        tag={'d23'}
+        total={123}
+        onFinish={() => {}}
+        onShow={() => {}}
+      />
+    </div>
+  )
 }
 
 export default App

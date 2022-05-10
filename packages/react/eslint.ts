@@ -38,6 +38,16 @@ module.exports = {
     'react/sort-comp': 0,
     'react/react-in-jsx-scope': 0,
     'react/jsx-one-expression-per-line': 0,
+    'react/jsx-sort-props': ['error', {
+      "callbacksLast": true,
+      "shorthandFirst": true,
+      "shorthandLast": false,
+      "multiline": "ignore",
+      "ignoreCase": true,
+      "noSortAlphabetically": false,
+      "reservedFirst": true,
+      "locale": "auto"
+    }],
     'generator-star-spacing': 0,
     'function-paren-newline': 0,
     'import/no-unresolved': 0,
