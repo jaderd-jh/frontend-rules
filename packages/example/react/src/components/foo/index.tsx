@@ -1,3 +1,5 @@
+import type { CSSProperties } from 'react'
+
 type FooProps = {
   bar: string
   tag: string
@@ -8,6 +10,8 @@ type FooProps = {
   foo: {
     bar: string
   }
+  style?: CSSProperties
+  className?: string
 }
 
 const Foo = (props: FooProps) => {

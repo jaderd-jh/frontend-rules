@@ -71,6 +71,7 @@ module.exports = {
     'class-methods-use-this': 0,
     'no-confusing-arrow': 0,
     'linebreak-style': 0,
+    'prefer-destructuring': ['error', { object: true, array: false }],
     // Too restrictive, writing ugly code to defend against a very unlikely scenario:
     // https://eslint.org/docs/rules/no-prototype-builtins
     'no-prototype-builtins': 'off',
