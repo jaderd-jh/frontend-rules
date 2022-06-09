@@ -112,7 +112,7 @@ importers:
       stylelint-config-prettier: ^9.0.3
       stylelint-config-recess-order: ^3.0.0
       stylelint-config-recommended: ^8.0.0
-      stylelint-config-standard: ^25.0.0
+      stylelint-config-standard: ^26.0.0
       stylelint-config-standard-scss: ^4.0.0
       stylelint-declaration-block-no-ignored-properties: ^2.5.0
       stylelint-high-performance-animation: ^1.6.0
@@ -139,7 +139,7 @@ importers:
       stylelint-config-prettier: 9.0.3
       stylelint-config-recess-order: 3.0.0
       stylelint-config-recommended: 8.0.0
-      stylelint-config-standard: 25.0.0
+      stylelint-config-standard: 26.0.0
       stylelint-config-standard-scss: 4.0.0
       stylelint-declaration-block-no-ignored-properties: 2.5.0
       stylelint-high-performance-animation: 1.6.0
@@ -171,7 +171,7 @@ importers:
       stylelint-config-prettier: ^9.0.3
       stylelint-config-recess-order: ^3.0.0
       stylelint-config-recommended-vue: ^1.4.0
-      stylelint-config-standard: ^25.0.0
+      stylelint-config-standard: ^26.0.0
       stylelint-config-standard-scss: ^4.0.0
       stylelint-declaration-block-no-ignored-properties: ^2.5.0
       stylelint-high-performance-animation: ^1.6.0
@@ -201,7 +201,7 @@ importers:
       stylelint-config-prettier: 9.0.3
       stylelint-config-recess-order: 3.0.0
       stylelint-config-recommended-vue: 1.4.0_postcss-html@1.4.1
-      stylelint-config-standard: 25.0.0
+      stylelint-config-standard: 26.0.0
       stylelint-config-standard-scss: 4.0.0
       stylelint-declaration-block-no-ignored-properties: 2.5.0
       stylelint-high-performance-animation: 1.6.0
@@ -5300,6 +5300,14 @@ packages:
       stylelint: ^14.4.0
     dependencies:
       stylelint-config-recommended: 7.0.0
+    dev: false
+
+  /stylelint-config-standard/26.0.0:
+    resolution: {integrity: sha512-hUuB7LaaqM8abvkOO84wh5oYSkpXgTzHu2Zza6e7mY+aOmpNTjoFBRxSLlzY0uAOMWEFx0OMKzr+reG1BUtcqQ==}
+    peerDependencies:
+      stylelint: ^14.9.0
+    dependencies:
+      stylelint-config-recommended: 8.0.0
     dev: false
 
   /stylelint-declaration-block-no-ignored-properties/2.5.0:
