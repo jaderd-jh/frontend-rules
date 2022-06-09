@@ -161,7 +161,7 @@ importers:
       eslint-plugin-import: ^2.26.0
       eslint-plugin-jsx-a11y: ^6.5.1
       eslint-plugin-prettier: ^4.0.0
-      eslint-plugin-prettier-vue: ^3.1.0
+      eslint-plugin-prettier-vue: ^4.0.0
       eslint-plugin-unicorn: ^42.0.0
       eslint-plugin-vue: ^9.0.1
       postcss-html: ^1.4.1
@@ -191,7 +191,7 @@ importers:
       eslint-plugin-import: 2.26.0_wmewmzygdgxy3jietvpvr72qxe
       eslint-plugin-jsx-a11y: 6.5.1
       eslint-plugin-prettier: 4.0.0_ttcikbw5yztdadzhevg6ml5cuy
-      eslint-plugin-prettier-vue: 3.1.0
+      eslint-plugin-prettier-vue: 4.1.0
       eslint-plugin-unicorn: 42.0.0
       eslint-plugin-vue: 9.0.1
       postcss-html: 1.4.1
@@ -1150,7 +1150,6 @@ packages:
       '@vue/shared': 3.2.37
       estree-walker: 2.0.2
       source-map: 0.6.1
-    dev: true
 
   /@vue/compiler-dom/3.2.34:
     resolution: {integrity: sha512-MFLUYDgy0aES9x1goU/pgxpzgT9IZOndO8qwQVSyVfUvl/CywEBtfBi5+8fsiBDhoGIT7g8qcsUUF1NYViU2vQ==}
@@ -1163,7 +1162,6 @@ packages:
     dependencies:
       '@vue/compiler-core': 3.2.37
       '@vue/shared': 3.2.37
-    dev: true
 
   /@vue/compiler-sfc/3.2.34:
     resolution: {integrity: sha512-I+vT4soKJtdsoREBDYAcz56+yGpZ5T3GUigvBFgC2yTeTtBtREOPzYw8kZyMuD2ZlryPYBkbV8D9xxcvU0j/aw==}
@@ -1192,7 +1190,6 @@ packages:
       magic-string: 0.25.9
       postcss: 8.4.14
       source-map: 0.6.1
-    dev: true
 
   /@vue/compiler-ssr/3.2.34:
     resolution: {integrity: sha512-zyaMdGJhxoA34ibWsXF7VH1PO5yrNB1MZg/ByRfXGM8JefGQaz+PpHvBy/5OI0ehEyhAyCb7279JdhYHacMZbw==}
@@ -1205,7 +1202,6 @@ packages:
     dependencies:
       '@vue/compiler-dom': 3.2.37
       '@vue/shared': 3.2.37
-    dev: true
 
   /@vue/eslint-config-prettier/7.0.0:
     resolution: {integrity: sha512-/CTc6ML3Wta1tCe1gUeO0EYnVXfo3nJXsIhZ8WJr3sov+cGASr6yuiibJTL6lmIBm7GobopToOuB3B6AWyV0Iw==}
@@ -1253,7 +1249,6 @@ packages:
       '@vue/shared': 3.2.37
       estree-walker: 2.0.2
       magic-string: 0.25.9
-    dev: true
 
   /@vue/reactivity/3.2.34:
     resolution: {integrity: sha512-xbRIOPqxdNOr0zS47moRS6zf4BKd0z+55R85UJlo4r5ezqCktk6fYy1atY4tGzo7Maqh6QoKw3LtIKvpz8d7WA==}
@@ -1293,7 +1288,6 @@ packages:
 
   /@vue/shared/3.2.37:
     resolution: {integrity: sha512-4rSJemR2NQIo9Klm1vabqWjD8rs/ZaJSzMxkMNeJS6lHiUjjUeYFbooN19NgFjztubEKh3WlZUeOLVdbbUWHsw==}
-    dev: true
 
   /@vue/tsconfig/0.1.3:
     resolution: {integrity: sha512-kQVsh8yyWPvHpb8gIc9l/HIDiiVUy1amynLNpCy8p+FoCiZXCo6fQos5/097MmnNZc9AtseDsCrfkhqCrJ8Olg==}
@@ -2585,10 +2579,11 @@ packages:
       eslint: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0
     dev: false
 
-  /eslint-plugin-prettier-vue/3.1.0:
-    resolution: {integrity: sha512-PxJxmHTAqBv5v6rU/hSg55cyJAp+LhF2K0ffF+MeR3zt0Njy36X5AcYQ75sYLt0KKdgA35XkQHIBrgLF63hTxA==}
+  /eslint-plugin-prettier-vue/4.1.0:
+    resolution: {integrity: sha512-fh2HfRpyAs60LkwTfSvBy4BfYgf5YW6KplpOvkPUyFyeeYBD/pSlBhXHCbZklcnkbURptfHs2fdiqGeB+SYSIw==}
+    engines: {node: '>=14'}
     dependencies:
-      '@vue/compiler-sfc': 3.2.34
+      '@vue/compiler-sfc': 3.2.37
       chalk: 4.1.2
       prettier: 2.6.2
       prettier-linter-helpers: 1.0.0
